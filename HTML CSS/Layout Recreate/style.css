@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: grid;   
+    grid-template-columns: 1fr 1fr;  /* create a grid of 2 coloumns of equal width, ORDER=HTML ORDER add container items such that each row contains 2 at max 2 items */
+    border: 2px solid black;
+    gap: 10px;  /* to add spacing between grid items in layout and not in only rows or coloumns */
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image,.text-box{   /* width is already equal due to 1fr 1fr height is also equal, can also give height to only one , as rows take the height of the tallest item while other items stretch to match.*/
+    height: 300px;
+}
+
+.image img{
+    width: 100%;   /* width , height completely of parent*/
+    height: 100%;
+    object-fit: cover;  /* to ensure image fill container without distortion may crop. without object-fit:cover image streched */
+}

@@ -1,0 +1,25 @@
+.cards-container{
+    display: flex;
+    gap:50px;
+padding: 20px;
+
+}
+
+.card{
+width: 200px;  /* card do not have fixed height, its dynamic and depend upon content inside it.*/
+border: 1px solid #ccc;
+border-radius: 2px;
+overflow: hidden;
+ text-align: center;
+}
+
+.card img{
+width: 100%; /* card img will take 100% width of parent i.e., card */
+height: 150px;   
+object-fit: cover;
+}
+
+.card:hover{     
+    transform: scale(1.05);
+   
+}

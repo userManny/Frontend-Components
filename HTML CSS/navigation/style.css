@@ -1,0 +1,48 @@
+body{
+    margin:0;
+}
+ .nav-bar{
+    display:flex;
+    gap:50px;
+    justify-content: space-between;  /*space beteen is better for navigation*/
+    align-items:center;
+    background-color: #2874f0;
+    color: white;
+    height: 100px;      /* to see the effect of align-items(works on counter axis) */
+    padding-left: 40px;   /* padding is used for justify-content:space-between */
+    padding-right: 40px;
+}
+
+.nav-links{
+    display: flex;
+    gap:30px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-links a:hover{
+    color:red;
+
+}
+/* .nav-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    background-color: rgb(123, 0, 255);
+    color: white;
+} */
+
+
