@@ -1,10 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Carousel.css";
 
 function Carousel(){
 
     const images=["/Images/walter.jpg",  "/Images/Carl-Lightman.jpg", "/Images/Charlie Eppes.jpg", "/Images/elliot.jpeg", "/Images/brock.jpg" ];
     const [index,setIndex] =useState(0);
+
+
+    useEffect(()=>{
+    const interval = setInterval(()=>{
+        setIndex(prev=>(prev+1)%images.length);
+     },2000);
+     
+     return ()=> clearInterval(interval);
+    },[]);   // better to add images.length in dependency array
 
 function handlePrev(){
     setIndex(prev=>(prev-1+images.length)%(images.length));

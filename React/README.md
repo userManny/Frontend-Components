@@ -17,3 +17,11 @@ folder navigation in react
 ./ means start from here(look in same folder as present file)
 ../ look in folder 1 level up 
 for e.g in Card.jsx  => import "./Card.css"  as both are in same folder    import "./Component/Card/Card
+
+useEffect(() => {
+  // runs on mount
+
+  return () => {
+    // runs on unmount
+  };
+}, []);
