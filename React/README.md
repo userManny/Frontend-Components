@@ -25,3 +25,11 @@ useEffect(() => {
     // runs on unmount
   };
 }, []);
+
+# IN a rect component 
+function Users() {
+  // 👈 This part = normal JavaScript
+  return (
+    // 👈 This part = JSX (HTML-like)  first {} enter js mode then use js tools
+  );
+}
