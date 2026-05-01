@@ -7,7 +7,7 @@ padding: 20px;
 
 .card{
 width: 200px;  /* card do not have fixed height, its dynamic and depend upon content inside it.*/
-border: 1px solid #ccc;
+border: 1px solid black;
 border-radius: 2px;
 overflow: hidden;
  text-align: center;

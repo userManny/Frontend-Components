@@ -14,6 +14,12 @@ const cardsData =[
         title:"Charlie Eppes",
         description:"Carles Eppes From Numb3rs helps Don Eppes(FBI) to solve cases using Mathematics"
     },
+    {
+          img:"/Images/elliot.jpeg",
+          title:"Elliot Alderson",
+          description:"Elliot Alderson from Mr Robot works as cybersecurity engineer at Alsafe by day and a vigilante hacker ar night."
+
+        },
       {
         img:"Images/brock.jpg",
         title:"Brock Lesnar(Beast)",
